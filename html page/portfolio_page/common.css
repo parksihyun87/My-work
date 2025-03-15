@@ -339,12 +339,11 @@ body{
     font-size: 18px;
     color: #353535;
     letter-spacing: -0.45px;
+    cursor: pointer;
 }
 
 /* 궁금한 점
-1. move to top 상위로 올리는 법 
-2. move to top 밑으로 여백 더 주기.
-3. textarea 왜 중간부터 써지는지. */
+1. textarea 왜 중간부터 써지는지. */
 
 
 /* far 2nd section 6 */
