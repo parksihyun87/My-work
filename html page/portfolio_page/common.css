@@ -227,3 +227,124 @@ body{
     letter-spacing: -1vw;
     z-index: 3;
 }
+
+/*  far- secion5 */
+
+.intro_section6 {
+    width:100%;
+    padding-left: 130px;
+    margin-top: 200px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 900px;
+}
+
+.intro_section6 .sub_title{
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.intro_section6 .section_desc{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #898989;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.intro_section6 .contact_summary {
+    margin: 60px 0px;
+}
+
+.intro_section6 .contact_summary .cs_item{
+    display: inline-block;
+    margin-right: 70px;
+    line-height: 45px;
+}
+
+.intro_section6 .contact_summary .cs_item a{
+   z-index: 5;
+   position: relative;
+}
+
+
+
+.intro_section6 .contact_form{
+    display: inline-block;
+    width: 30%;
+    z-index: 2;
+    position: absolute;
+}
+
+.intro_section6 .contact_form input, .intro_section6 .contact_form textarea{
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    line-height: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #353535;
+}
+
+/* far 1st section 6 */
+
+.intro_section6 .contact_form .submit_bt{
+    margin-top: 20px;
+    width: 200px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #282828;
+    cursor: pointer;
+    background-color: #eee;
+    transition-duration: 0.2s;
+}
+
+.intro_section6 .contact_form .submit_bt:hover{
+    background-color: #353535;
+    color: #fff;
+}
+
+.intro_section6 .contact_deco{
+    font-weight: 800;
+    font-size: 20vw;
+    position: absolute;
+    z-index: 0;
+    right: -4vw;
+    bottom: 160px;
+    line-height: 20vw;
+    letter-spacing: -0.5vw;
+    color: #494949;
+}
+
+.intro_section6 .contact_desc{
+    position: absolute;
+    bottom: 70px;
+    font-size: 18px;
+    line-height: 34px;
+    z-index: 1;
+}
+
+.intro_section6 .top_bt{
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #353535;
+    letter-spacing: -0.45px;
+}
+
+/* 궁금한 점
+1. move to top 상위로 올리는 법 
+2. move to top 밑으로 여백 더 주기.
+3. textarea 왜 중간부터 써지는지. */
+
+
+/* far 2nd section 6 */
