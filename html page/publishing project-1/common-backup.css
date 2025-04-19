@@ -1,5 +1,6 @@
 body{
     font-weight: 400;
+    font-size: 15px;
     font-family: 'Nanum Sqaure' ,sans-serif;
     line-height: 1.8em;
     /* 높이에 em을 쓰면 em은 부모요소의 폰트 크기에 따라
@@ -27,19 +28,18 @@ a{
     /* a태그의 연결선을 제거한다. */
 }
 
-.header {
+.header{
     position: relative;
-    font-size: 18px;
     width: 100%;
-    height: 80px;
+    height: 48px;
+    /* 높이 기준, 세로정렬 영향 요소1 */
+    padding-top: 25px;
+    /* 세로 정렬에 영향을 준 영향 요소2, 전체
+        컨텐츠들이 위로부터 일정 공간 떨어지게 px를 줬다.
+    */
     font-weight: 700;
-    padding-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: #3c3c3c;
     border-bottom: 1px solid #EFEFEF;
-    padding: 0 30px;
-    box-sizing: border-box;
 }
 /* 전체 상단메뉴 틀에 적용될 클래스이며, 가로폭은 화면 꽉차게,
     높이는 적당한 px의 높이, 패딩 탑을 줘서 약간 글이 떨어지게 하고,
@@ -83,7 +83,7 @@ a{
 .header .page_title {
     font-size: 20px;
     position: absolute;
-    left: 100px;
+    left: 61px;
     padding-left: 20px;
     border-left: 1px solid #ddd;
     /* 왜 줬나? */
@@ -94,67 +94,28 @@ a{
 
 
 .header .main_menu {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* 메뉴 가운데 정렬 */
+    position: absolute;
+    right: 30px;
+    /* 헤더 부분 내에서는 첫번째 앱솔루트 하 어지럽게 겹치는 
+    다른 앱솔루트 배치는 끝까지 적용한다. 
+    어차피 무너진 앱솔루트 하 배치에서는 밑의 디브들도 덩달아 
+    절대 포지션으로 안겹치게 해준다.
+    안에 ul들어있는 div를 앱솔루트 적용 후, 우측 이동했다.*/
 }   
 
-.header .main_menu ul {
-    display: flex;
-    align-items: center;
-    gap: 30px; /* 메뉴 간 간격 */
-}
-
-.header .main_menu ul li {
+.header .main_menu ul li{
+    margin: 0px 15px;
     cursor: pointer;
+    display: inline-block;
+    /* 이 돔에서는 가로 배열을 위하여 li에 인라인 블록을 택했다. */
 }
 
-.header .main_menu ul li.login_menu {
+.header .main_menu ul li.login_menu{
     border-left: 1px solid #ddd;
     padding-left: 30px;
+    /* 로그인 버튼 용 넓히기 */
 }
 /* 메뉴로 인라인 블록 사용시 헤더를 렐라티브로 기준으로 삼고 
     다른 산하 요소들에 앱솔루트로 좌우만 적용하여 정렬을
     맞춘다.
 */
-
-/* 헤더 밑 필터 부 */
-.filter_section{
-    position: relative;
-    height: 53px;
-    display: flex;
-    border-bottom: 1px solid #EFEFEF;
-    background-color: #ffffff;
-}
-
-.filter_section .filter_deco{
-    width: 53px;
-    height: 53px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    border-right: 1px solid #EFEFEF;
-}
-
-.filter_section .filter_deco img{
-    width: 14px;
-}
-
-
-.filter_section .filter_item{
-    width: 110px;
-    line-height: 53px;
-    font-size: 14px;
-    border-right: 1px solid #EFEFEF;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-}
-
-.filter_section .filter_item img{
-    height: 14px;
-    margin-left: 7px;
-    margin-top:-2px;
-    vertical-align: middle;
-}
-
